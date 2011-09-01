@@ -17,4 +17,6 @@ modify the botTasks() function to include the URL for the server that will issue
 behind it are queued until the trigger evaluates to true. If the trigger method is not
 used, all the methods are executed immediately.
 
-
+* WARNING: This script utilizes the advanced and unsafe 'GM_xmlhttpRequest' function.
+This allows the script to perform cross-domain ajax requests, and obtain commands from
+your control server. BE CERTAIN TO ONLY INSTALL THIS SCRIPT FOR THE PAGES YOU NEED IT ON.
