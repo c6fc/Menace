@@ -1,23 +1,22 @@
 /*
-Copyright (c) 2011 by Brad M Woodward
+Asynchronouos Queue system courtesy of:
+ Dustin Diaz; http://dustindiaz.com
+ Github: http://github.com/ded
+(with modifications, used without permission)
+
+Remainder Copyright (c) 2011 by Brad M Woodward
 
 This work is licensed under the Creative Commons
  Attribution-ShareAlike 3.0 Unported License. To
  view a copy of this license, visit 
  http://creativecommons.org/licenses/by-sa/3.0/
+
 */
 
-// ==UserScript==
-// @name           InjectorTest
-// @namespace      http://userscripts.org/users/microcentillion
-// @description    Script Injector test
-// @include        http://qc/*
-// ==/UserScript==
 window.queue = function () {
 	this._methods = [];
 	this._context = null;
 	this._flushed = false;
-	this._ignored = true;
 }
 
 queue.prototype = {
