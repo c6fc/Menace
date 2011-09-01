@@ -1,0 +1,20 @@
+Howdy.
+
+Menace was created to allow you to control interaction with a web-page via PHP in a simple,
+event-driven way. It is intended specifically to allow automated interaction with sites
+without making it obvious that the site is being autonomously driven. This solution allows
+HTTP referers for all content to remain intact, all form elements and scripts to work
+without modification, and the browser useragent to be unmodified. In the end, there should
+be no visible difference on the server end between a user controlling the page vs. another
+machine.
+
+inject.js - This is a GreaseMonkey script that must be loaded and targetted to the
+individual site or sites you want to automate. It creates several methods for altering
+the contents of form elements, and all the elements can be chained together. You MUST
+modify the botTasks() function to include the URL for the server that will issue commands.
+
+* NOTE: The 'trigger' method allows the automation to be event driven. All methods chained
+behind it are queued until the trigger evaluates to true. If the trigger method is not
+used, all the methods are executed immediately.
+
+
