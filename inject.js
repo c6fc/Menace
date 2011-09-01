@@ -2,7 +2,7 @@
 Asynchronouos Queue system courtesy of:
  Dustin Diaz; http://dustindiaz.com
  Github: http://github.com/ded
-(with modifications, used without permission)
+(with modifications, used with permission)
 
 Remainder Copyright (c) 2011 by Brad M Woodward
 
